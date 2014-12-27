@@ -43,6 +43,9 @@ static void *OverlayMiddleViewKey = &OverlayMiddleViewKey;
 		
 		const CGFloat height = CGRectGetHeight(videoPlaybackOverlayView.bounds) - (CGRectGetHeight(topPlaybackControlView.bounds) + CGRectGetHeight(bottomPlaybackControlView.bounds));
 		overlayMiddleView.frame = CGRectMake(CGRectGetMinX(videoPlaybackOverlayView.bounds), CGRectGetMaxY(topPlaybackControlView.bounds), CGRectGetWidth(videoPlaybackOverlayView.bounds), height);
+        if (overlayMiddleView.subviews.count > 0) {
+            
+        }
 	}
 	else
 	{
